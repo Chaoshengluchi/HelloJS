@@ -1,0 +1,112 @@
+**目录操作**
+
+|命令名|功能|举例|
+|-|-:|:-:|
+|mkdir|创建一个目录|mkdir folder—name|
+|rmdir|删除一个目录|rmdir folder-name|
+|mvdir|移动或重命名一个目录|mvdir dir1 dir2|
+|cd|改变当前目录|cd foldername|
+|pwd|显示当前目录的全路径|pwd|
+|ls|显示当前目录的所有文件|ls／ls -la|
+
+**文件操作**
+|命令名|功能|举例|
+|-|-:|:-:|
+|cp|赋值文件或目录|cp file1 file2|
+|rm|删除文件或目录|rm file—name|
+|mv|修改文件名或目录|mv file-name|
+|open .|打开文件或文件夹|open file-name|
+
+**其它**  
+
+退到上一个目录  
+> cd ..  
+
+退到上一个的上一个目录  
+> cd ../..  
+
+退到默认目录
+> cd ~ //适用于已经进入了很深的目录需要返回时
+
+删除文件夹my_folder
+> rmdir my_foloder
+> rm -rf my_foloder //强制删除  
+
+查看当前文件夹内容  
+> ls  
+
+创建文件并写入文字
+> echo "XX" >> XX.json  
+> echo "XX" >> XX.md  
+> echo "XX" >> XX.txt  
+
+也可以利用编辑器如sublime新建一个文件保存时把后缀加上。  
+
+退出node编辑  
+> Command+C 两次  
+
+关闭窗口  
+> Command+W  
+
+退出程序
+> Command+Q  
+
+清屏  
+> Command+K
+
+
+查看nvm版本  
+> nvm --version  
+
+查看nodejs路径  
+> path | find "nodejs" 
+
+打开浏览器控制台  
+> option+command+i  
+
+浏览器里执行命令：  
+> Command+Enter  
+
+查看版本  
+> git version  
+
+添加新的版本
+> git commit 
+
+github fork 后的更新问题的解决办法：  
+> bash 进入项目目录  
+> git remote add upstream 上游仓库名称  .git  
+> git checkout master  
+> git fetch upstream  
+> git merge upstream/master  
+> git push origin master  
+
+cd的联想功能：  
+如想要进入my-folder这个文件夹，只需输入cd m，然后tab，文件夹的名字即可联想出来  
+
+在项目里加入.gitignore可以配置自动忽略的内容，自动忽略ds_store 
+
+###其他还不是很明白的命令
+==可能是查看node是否安装的命令，待考证==
+> usr/local/bin/node  
+
+==nvm 安装不成功时执行的命令==  
+> cat .bashrc  
+> cat .bash_profile  
+> echo "source ~/.bashrc" >> .bash_profile  
+关闭终端再重启  
+> nvm --version
+> curl -o- http://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash  
+> touch ~/.bashrc  
+
+最终版本(解决nvm安装不成功的问题)：
+> touch ~/.bashrc  
+> 重新安装nvm，运行命令：curl -o- http://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash  
+>nvm --version   
+
+安装node下载速度慢，可以采用镜像源命令  
+> nvm node_mirror npm.taobao.org/mirrors/node/  
+
+git config -|  
+open .git/config  
+git branch -a  
