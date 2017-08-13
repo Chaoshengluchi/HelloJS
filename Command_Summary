@@ -52,8 +52,10 @@
 > Command+Q  
 
 清屏  
-> Command+K
+> Command+K  
 
+调出搜索
+> Command+空格  
 
 查看nvm版本  
 > nvm --version  
